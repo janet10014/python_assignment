@@ -12,6 +12,10 @@ def display_menu():
     print("6. Exit")
 
 def add_student(students):
+    """
+    Prompt the user to enter a student name and grade.
+    Validates input and adds it to the students dictionary.
+    """
     name = input("Enter student name: ").strip()
     if not name:
         print("Name cannot be empty.")
@@ -71,7 +75,11 @@ def main():
 
     while True:
         display_menu()
-        choice = input("Choose an option (1-6): ")
+        choice = input("Choose an option (1-6): ").strip()
+
+        if choice not in ["1", "2", "3", "4", "5", "6"]:
+            print("Invalid choice. Please enter a number between 1 and 6.")
+            continue  # go back to the menu
 
         if choice == "1":
             add_student(students)
@@ -86,8 +94,6 @@ def main():
         elif choice == "6":
             print("Goodbye!")
             break
-        else:
-            print("Invalid choice. Please try again.")
 
 if __name__ == "__main__":
     main()
