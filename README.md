@@ -1,7 +1,7 @@
 # Python Assignment – Student Manager
 
 ## Group Members
-- Adewusi Janet – Student ID: 30149586
+- Adetoun Adewusi – Student ID: 30149586
 - Geonho park – Student ID: 
 - sunhum park – Student ID: 
 
