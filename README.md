@@ -29,5 +29,8 @@ The program demonstrates:
 
 ```bash
 python student_manager.py
-Add group README.md with instructions and description
+## Sample Output
+
+![Program Output](screenshots/program_output.png)
+
 
